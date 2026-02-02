@@ -1,0 +1,7 @@
+streamlit
+pandas
+msoffcrypto-tool
+openpyxl
+xlsxwriter
+chardet
+xlrd
