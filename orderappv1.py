@@ -5,7 +5,7 @@ import io
 import chardet
 from datetime import datetime, timedelta
 
-st.set_page_config(page_title="Order App 2.0 - 數據統計版", page_icon="📊", layout="wide")
+st.set_page_config(page_title="Order App 2.0 by Okross Frank", page_icon="📊", layout="wide")
 
 def try_decrypt(file_stream, password):
     decrypted_buffer = io.BytesIO()
@@ -46,7 +46,7 @@ with st.sidebar:
     f_old = st.checkbox("4. 排除 >350天舊單", value=True)
     st.info("💡 系統會自動排除：無快遞單號、包含『勿拍』字樣、重複、或狀態異常之訂單。")
 
-st.header("📦 Order App v2.0 - 專業數據處理中心")
+st.header("📦 Order App v2.0 訂單格式合併轉換")
 
 uploaded_files = st.file_uploader("請上傳 B 檔 (對帳單) 與 C 檔 (訂單清單)", type=['xlsx', 'xls', 'csv'], accept_multiple_files=True)
 
@@ -152,4 +152,5 @@ if uploaded_files and shop_url:
                 st.write("以下訂單因：無物流單號、包含『勿拍』或重複而被剔除。")
                 st.dataframe(excluded_df[['join_key', '前台传入商品名称', 'amount', '快递单号']])
         else:
+
             st.error("❌ 找不到對應的 B 檔與 C 檔欄位，請檢查上傳內容。")
