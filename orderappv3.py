@@ -36,7 +36,7 @@ def read_excel_comprehensive(file, use_pass=False, password=""):
 # --- 側邊欄 ---
 with st.sidebar:
     st.title("🛡️ 參數設定")
-    shop_url = st.text_input("1. 店鋪網址", value="https://www.etmall.com.tw/")
+    shop_url = st.text_input("1. 店鋪網址", value="https://www.etmall.com.tw/ms/172448")
     platform_name = st.text_input("2. 電商平台名稱", value="ETMall")
     exchange_rate = st.number_input("3. 匯率 (1 USD = ? NTD)", value=32.0, step=0.1)
     st.divider()
