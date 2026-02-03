@@ -37,7 +37,7 @@ def read_excel_comprehensive(file, use_pass=False, password=""):
 # --- 介面設定 ---
 with st.sidebar:
     st.title("🛡️ 參數設定")
-    shop_url = st.text_input("1. 店鋪網址", value="https://www.etmall.com.tw/")
+    shop_url = st.text_input("1. 店鋪網址", value="https://www.etmall.com.tw/ms/172448")
     platform_name = st.text_input("2. 電商平台英文名稱", value="ETMall")
     st.divider()
     use_pass = st.checkbox("3. 檔案有密碼", value=True)
@@ -154,3 +154,4 @@ if uploaded_files and shop_url:
         else:
 
             st.error("❌ 找不到對應的 B 檔與 C 檔欄位，請檢查上傳內容。")
+
