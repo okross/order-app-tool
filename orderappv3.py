@@ -44,7 +44,7 @@ with st.sidebar:
     excel_pass = st.text_input("輸入密碼", value="123456", type="password")
     f_return = st.checkbox("5. 排除銷退訂單", value=True)
 
-st.header("📦 Order App v3.0 - 財務統計強化版")
+st.header("📦 Order App v3.0 - 訂單轉換")
 
 uploaded_files = st.file_uploader("上傳訂單 Excel", type=['xlsx', 'xls', 'csv'], accept_multiple_files=True)
 
