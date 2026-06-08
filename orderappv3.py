@@ -4,7 +4,7 @@ import msoffcrypto
 import io
 from datetime import datetime, timedelta
 
-st.set_page_config(page_title="Order App 3.0 - 訂單轉換", page_icon="💰", layout="wide")
+st.set_page_config(page_title="Etmall Order App 3.0 - 訂單轉換", page_icon="💰", layout="wide")
 
 def try_decrypt(file_stream, password):
     decrypted_buffer = io.BytesIO()
